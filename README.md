@@ -1,16 +1,35 @@
-# React Grid
+<h1 align="center">
+  React Grid
+</h1>
 
-A modern lightweight React grid layout library inspired by [bootstrap](https://getbootstrap.com/).
+<p align="center">
+  A modern lightweight React grid layout library inspired by <a href="https://getbootstrap.com/" title="Bootstrap" target="_blank">Bootstrap</a>
+</p>
 
-[DEMO](https://input-output-hk.github.io/react-grid/)
+<p align="center">
+  <a href="https://input-output-hk.github.io/react-grid/" title="demo" target="_blank">🚀 DEMO 🚀</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/input-output-hk/react-grid/issues" title="React Grid issues">
+    <img src="https://img.shields.io/github/issues/input-output-hk/react-grid.svg" alt="React Grid issues" />
+  </a>
+  <img src="https://img.shields.io/github/forks/input-output-hk/react-grid.svg" alt="Fork React Grid" />
+  <img src="https://img.shields.io/github/stars/input-output-hk/react-grid.svg" alt="React Grid stars" />
+  <a href="https://github.com/input-output-hk/react-grid/blob/master/LICENSE.md" title="React Grid license">
+    <img src="https://img.shields.io/github/license/input-output-hk/react-grid.svg" alt="React Grid license" />
+  </a>
+  <img src="https://img.shields.io/circleci/build/github/input-output-hk/react-grid.svg" alt="CircleCI build">
+</p>
+<br />
 
 ## Contents
 
-1. Install
-1. Dependencies
-1. Quick start
-1. API
-1. Contributing
+1. [Install](#install)
+1. [Dependencies](#dependencies)
+1. [Quick start](#quick-start)
+1. [API](#api)
+1. [Contributing](#contributing)
 
 ## Install
 
