@@ -33,6 +33,16 @@ jobs:
           root: build
           paths:
             - "*"
+  deploy:
+    executor: main
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+      - run:
+          name: Publish to NPM
+          command: npm publish
   release:
     executor: main
     steps:
@@ -134,6 +144,12 @@ workflows:
       - release:
           requires:
             - build
+          filters:
+            branches:
+              only: master
+      - deploy:
+          requires:
+            - release
           filters:
             branches:
               only: master

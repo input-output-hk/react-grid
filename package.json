@@ -1,6 +1,6 @@
 {
   "name": "@input-output-hk/react-grid",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Bootstrap inspired React responsive grid",
   "main": "build/index.js",
   "homepage": "https://input-output-hk.github.io/react-grid/",
@@ -20,6 +20,7 @@
     "deploy:demo": "./scripts/deploy_demo.sh",
     "lint": "eslint src/**/*.ts src/**/*.tsx demo/src/**/*.js",
     "prepublish": "npm run build",
+    "prepublishOnly": "npm run lint && npm run test",
     "serve:demo": "static-server public/ -p 9090",
     "test": "TZ=UTC jest src/",
     "watch:demo": "WATCH=true npm run build:demo",
