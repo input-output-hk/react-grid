@@ -12,7 +12,7 @@
     "build:demo": "webpack --config webpack_demo.config.js",
     "build:js": "babel src --out-dir build --extensions \".ts,.tsx\" --source-maps inline",
     "build:types": "tsc",
-    "deploy:demo": "./scripts/deploy.sh",
+    "deploy:demo": "./scripts/deploy_demo.sh",
     "lint": "eslint src/**/*.ts src/**/*.tsx demo/src/**/*.js",
     "prepublish": "npm run build",
     "serve:demo": "static-server public/ -p 9090",

@@ -49,7 +49,7 @@ jobs:
           name: Tag release
           command: |
                 PACKAGE_VERSION=$(node ./scripts/getPackageVersion.js | tr -d '\n')
-                git tag v$PACKAGE_VERSION
+                git tag -f v$PACKAGE_VERSION
                 git push origin --force --tags
   test:
     executor: main
