@@ -42,7 +42,7 @@ jobs:
             - node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
       - run:
           name: Publish to NPM
-          command: npm publish
+          command: npm publish --access public
   release:
     executor: main
     steps:
