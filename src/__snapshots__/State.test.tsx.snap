@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`State lg screens the default state is correct 1`] = `
+<Provider>
+  <div>
+    <ul>
+      <li
+        key="sm"
+      >
+        576
+      </li>
+      <li
+        key="md"
+      >
+        768
+      </li>
+      <li
+        key="lg"
+      >
+        992
+      </li>
+      <li
+        key="xl"
+      >
+        1200
+      </li>
+    </ul>
+    <span
+      key="current screen size"
+    >
+      lg
+    </span>
+  </div>
+</Provider>
+`;
+
+exports[`State md screens the default state is correct 1`] = `
+<Provider>
+  <div>
+    <ul>
+      <li
+        key="sm"
+      >
+        576
+      </li>
+      <li
+        key="md"
+      >
+        768
+      </li>
+      <li
+        key="lg"
+      >
+        992
+      </li>
+      <li
+        key="xl"
+      >
+        1200
+      </li>
+    </ul>
+    <span
+      key="current screen size"
+    >
+      md
+    </span>
+  </div>
+</Provider>
+`;
+
+exports[`State sm screens the default state is correct 1`] = `
+<Provider>
+  <div>
+    <ul>
+      <li
+        key="sm"
+      >
+        576
+      </li>
+      <li
+        key="md"
+      >
+        768
+      </li>
+      <li
+        key="lg"
+      >
+        992
+      </li>
+      <li
+        key="xl"
+      >
+        1200
+      </li>
+    </ul>
+    <span
+      key="current screen size"
+    >
+      sm
+    </span>
+  </div>
+</Provider>
+`;
+
+exports[`State the default state is correct 1`] = `
+<Provider>
+  <div>
+    <ul>
+      <li
+        key="sm"
+      >
+        576
+      </li>
+      <li
+        key="md"
+      >
+        768
+      </li>
+      <li
+        key="lg"
+      >
+        992
+      </li>
+      <li
+        key="xl"
+      >
+        1200
+      </li>
+    </ul>
+    <span
+      key="current screen size"
+    >
+      xl
+    </span>
+  </div>
+</Provider>
+`;
+
+exports[`State when using custom break points it renders correctly 1`] = `
+<Provider
+  screenSizes={
+    Object {
+      "lg": 400,
+      "md": 300,
+      "sm": 200,
+      "xl": 400,
+    }
+  }
+>
+  <div>
+    <ul>
+      <li
+        key="sm"
+      >
+        200
+      </li>
+      <li
+        key="md"
+      >
+        300
+      </li>
+      <li
+        key="lg"
+      >
+        400
+      </li>
+      <li
+        key="xl"
+      >
+        400
+      </li>
+    </ul>
+    <span
+      key="current screen size"
+    >
+      xl
+    </span>
+  </div>
+</Provider>
+`;
+
+exports[`State xl screens the default state is correct 1`] = `
+<Provider>
+  <div>
+    <ul>
+      <li
+        key="sm"
+      >
+        576
+      </li>
+      <li
+        key="md"
+      >
+        768
+      </li>
+      <li
+        key="lg"
+      >
+        992
+      </li>
+      <li
+        key="xl"
+      >
+        1200
+      </li>
+    </ul>
+    <span
+      key="current screen size"
+    >
+      xl
+    </span>
+  </div>
+</Provider>
+`;
+
+exports[`State xs screens the default state is correct 1`] = `
+<Provider>
+  <div>
+    <ul>
+      <li
+        key="sm"
+      >
+        576
+      </li>
+      <li
+        key="md"
+      >
+        768
+      </li>
+      <li
+        key="lg"
+      >
+        992
+      </li>
+      <li
+        key="xl"
+      >
+        1200
+      </li>
+    </ul>
+    <span
+      key="current screen size"
+    >
+      xs
+    </span>
+  </div>
+</Provider>
+`;
+
+exports[`State xs screens when screen resized to sm screen it updates the wrapper correctly 1`] = `
+<Provider>
+  <div>
+    <ul>
+      <li
+        key="sm"
+      >
+        576
+      </li>
+      <li
+        key="md"
+      >
+        768
+      </li>
+      <li
+        key="lg"
+      >
+        992
+      </li>
+      <li
+        key="xl"
+      >
+        1200
+      </li>
+    </ul>
+    <span
+      key="current screen size"
+    >
+      sm
+    </span>
+  </div>
+</Provider>
+`;
