@@ -71,6 +71,8 @@ jobs:
       - restore_cache:
           keys:
             - node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+      - attach_workspace:
+          at: build
       - run:
           name: Building demo
           command: npm run build:demo
@@ -112,7 +114,7 @@ workflows:
             - install_dependencies
       - build_demo:
           requires:
-            - install_dependencies
+            - build
       - release:
           requires:
             - build
