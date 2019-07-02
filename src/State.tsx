@@ -41,6 +41,16 @@ const DEFAULT_SCREEN_SIZES: ScreenSizes = {
   xl: 1200
 }
 
+const noop = () => {}
+interface Window {
+  addEventListener: Function,
+  removeEventListener: Function,
+  innerWidth: number
+}
+
+declare const global: any
+const window: Window = global.window || { addEventListener: noop, removeEventListener: noop }
+
 const getScreenSize: Function = (screenSizes: ScreenSizes): ScreenSize => {
   const screenWidth: number = window.innerWidth || 0
   if (screenWidth < screenSizes.sm) return ScreenSize.xs
