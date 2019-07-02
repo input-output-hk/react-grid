@@ -20,6 +20,7 @@
     <img src="https://img.shields.io/github/license/input-output-hk/react-grid.svg" alt="React Grid license" />
   </a>
   <img src="https://img.shields.io/circleci/build/github/input-output-hk/react-grid.svg" alt="CircleCI build">
+  <img src="https://coveralls.io/repos/github/input-output-hk/react-grid/badge.svg?branch=master" alt="Test coverage" />
 </p>
 <br />
 
