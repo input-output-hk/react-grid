@@ -1,6 +1,6 @@
 {
   "name": "@input-output-hk/react-grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bootstrap inspired React responsive grid",
   "main": "build/index.js",
   "homepage": "https://input-output-hk.github.io/react-grid/",
