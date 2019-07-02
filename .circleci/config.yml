@@ -42,7 +42,7 @@ jobs:
             - node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
       - run:
           name: Publish to NPM
-          command: npm publish --access public
+          command: ./scripts/publish.sh
   release:
     executor: main
     steps:
@@ -57,10 +57,7 @@ jobs:
                 git config user.name "$GIT_USERNAME"
       - run:
           name: Tag release
-          command: |
-                PACKAGE_VERSION=$(node ./scripts/getPackageVersion.js | tr -d '\n')
-                git tag v$PACKAGE_VERSION
-                git push origin --tags
+          command: ./scripts/tag_release.sh
   test:
     executor: main
     steps:
