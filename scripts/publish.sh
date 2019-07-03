@@ -10,5 +10,6 @@ fi
 PACKAGE_VERSION=$(node ./scripts/getPackageVersion.js)
 TAG_EXISTS=$(./scripts/tag_exists.sh v$PACKAGE_VERSION)
 if [[ $TAG_EXISTS == "false" ]]; then
+  echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > ./.npmrc
   npm publish --access public
 fi
